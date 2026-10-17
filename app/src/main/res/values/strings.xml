@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">D-Macro</string>
+
+    <!-- Navegação -->
+    <string name="aba_macros">Macros</string>
+    <string name="aba_registros">Registros</string>
+    <string name="aba_saude">Saúde</string>
+    <string name="aba_configuracoes">Configurações</string>
+
+    <!-- Comuns -->
+    <string name="ok">OK</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="remover">Remover</string>
+    <string name="excluir">Excluir</string>
+    <string name="salvar">Salvar</string>
+    <string name="voltar">Voltar</string>
+    <string name="fechar">Fechar</string>
+    <string name="depois">Depois</string>
+    <string name="escolher">Escolher</string>
+    <string name="buscar">Buscar</string>
+    <string name="carregando">Carregando…</string>
+    <string name="limpar">Limpar</string>
+    <string name="executar">Executar</string>
+    <string name="mais_opcoes">Mais opções</string>
+    <string name="subir">Subir</string>
+    <string name="descer">Descer</string>
+    <string name="abrir_configuracoes">Abrir configurações</string>
+    <string name="corrigir">Corrigir</string>
+    <string name="conceder">Conceder</string>
+    <string name="configurar">Configurar</string>
+    <string name="reconectar">Reconectar</string>
+    <string name="ver_guia">Ver guia</string>
+
+    <!-- Tela Macros -->
+    <string name="ativado">Ativado</string>
+    <string name="pausado">Pausado</string>
+    <string name="nova_macro">Nova Macro</string>
+    <string name="sem_macros">Nenhuma Macro ainda.\nToque em “Nova Macro” para começar.</string>
+    <string name="sem_nome">(sem nome)</string>
+    <string name="chave_geral_desligada">A Chave geral está desligada: nenhuma Macro será disparada.</string>
+    <string name="banner_saude">Algo impede suas Macros de funcionar. Toque para ver a Saúde do app.</string>
+    <string name="macro_incompleta">Macro incompleta. Abra-a para ver o que falta.</string>
+    <string name="macro_com_problema">Macro com problema</string>
+
+    <!-- Editor -->
+    <string name="editar_macro">Editar Macro</string>
+    <string name="nome_da_macro">Nome da Macro</string>
+    <string name="ativada">Ativada</string>
+    <string name="desativada">Desativada</string>
+    <string name="nao_pode_ativar">Para ativar, resolva:</string>
+    <string name="gatilhos">Gatilhos</string>
+    <string name="acoes">Ações</string>
+    <string name="restricoes">Restrições</string>
+    <string name="sem_gatilhos">Sem gatilhos</string>
+    <string name="sem_acoes">Sem ações</string>
+    <string name="sem_restricoes">Sem restrições</string>
+    <string name="testar">Testar</string>
+    <string name="testar_titulo">Testar Macro?</string>
+    <string name="testar_texto">Isto executa as Ações de verdade, com valores de exemplo nos Marcadores:</string>
+    <string name="teste_ligar">Ligar para %1$s</string>
+    <string name="teste_iniciado">Teste iniciado. Veja o resultado em Registros.</string>
+    <string name="excluir_titulo">Excluir “%1$s”?</string>
+    <string name="acesso_notificacoes_titulo">Acesso a notificações</string>
+    <string name="acesso_notificacoes_texto">Para reagir a notificações, o D-Macro precisa do acesso a notificações. Ative o D-Macro na tela a seguir.</string>
+
+    <!-- Gatilho Notificação recebida -->
+    <string name="gatilho_notificacao">Notificação recebida</string>
+    <string name="aplicativos">Aplicativos</string>
+    <string name="todos_os_apps">Todos os aplicativos</string>
+    <string name="escolher_apps">Escolher aplicativos</string>
+    <string name="filtro_titulo">Filtro do título</string>
+    <string name="filtro_texto">Filtro do texto</string>
+    <string name="campo_titulo">Título</string>
+    <string name="campo_texto">Texto</string>
+    <string name="modo_qualquer">Qualquer</string>
+    <string name="modo_igual">Exatamente igual</string>
+    <string name="modo_contem">Contém</string>
+    <string name="modo_nao_contem">Não contém</string>
+    <string name="termo">Termo</string>
+    <string name="dica_termos">Com vários termos, basta um combinar (em “Não contém”, nenhum pode aparecer).</string>
+    <string name="opcoes">Opções</string>
+    <string name="ignorar_maiusculas">Ignorar maiúsculas/minúsculas</string>
+    <string name="ignorar_em_curso">Ignorar notificações em curso</string>
+    <string name="impedir_multiplos">Impedir múltiplos disparos</string>
+    <string name="aviso_android15">No Android 15+, conteúdos sensíveis de notificações (como códigos de uso único) podem ficar ocultos e o Gatilho não dispara. Você pode desativar as “notificações aprimoradas” nas configurações de notificação do aparelho.</string>
+
+    <!-- Ações -->
+    <string name="acao_chamada">Efetuar chamada</string>
+    <string name="acao_sms">Enviar SMS</string>
+    <string name="acao_email">Enviar e-mail</string>
+    <string name="acao_whatsapp">Enviar WhatsApp</string>
+    <string name="acessibilidade_rotulo">D-Macro: enviar WhatsApp</string>
+    <string name="divulgacao_titulo">Serviço de acessibilidade</string>
+    <string name="divulgacao_texto">Para enviar WhatsApp, o D-Macro usa um serviço de acessibilidade do Android.\n\nO que ele faz: quando uma Macro manda uma mensagem, abre a conversa no WhatsApp e toca no botão Enviar por você.\n\nO que ele não faz: não age fora do WhatsApp e do WhatsApp Business, não age fora de um envio, não lê nem guarda suas conversas e não envia nada para fora do aparelho.\n\nNa tela a seguir, toque em “D-Macro: enviar WhatsApp” e ative. Se o interruptor estiver bloqueado, veja o guia “Configurações restritas” na aba Saúde.</string>
+    <string name="agora_nao">Agora não</string>
+    <string name="aviso_whatsapp_desbloqueada">O envio só acontece com a tela desbloqueada. Com a tela bloqueada, a mensagem espera o desbloqueio por até 30 minutos. Para alertas que não podem esperar, combine com SMS ou chamada.</string>
+    <string name="aviso_sem_whatsapp">Nenhum WhatsApp instalado neste aparelho.</string>
+    <string name="enviar_por">Enviar por</string>
+    <string name="whatsapp_pessoal">WhatsApp</string>
+    <string name="whatsapp_business">WhatsApp Business</string>
+    <string name="previa_numero_whatsapp">%1$s → %2$s</string>
+    <string name="numero_whatsapp_sem_ddd">%1$s: inclua o DDD (ex.: 41 99999-0000)</string>
+    <string name="acessibilidade_descricao">Usado só pela Ação Enviar WhatsApp. Quando uma Macro manda uma mensagem, o D-Macro abre a conversa no WhatsApp e toca no botão Enviar por você. O serviço só funciona dentro do WhatsApp e do WhatsApp Business, só durante um envio, e não lê nem guarda suas conversas.</string>
+    <string name="destinatario">Destinatário</string>
+    <string name="destinatarios">Destinatários</string>
+    <string name="escolher_da_agenda">Escolher da agenda</string>
+    <string name="numero">Número</string>
+    <string name="endereco_email">Endereço de e-mail</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="assunto">Assunto</string>
+    <string name="corpo">Corpo</string>
+    <string name="limite_caracteres">Limite de caracteres</string>
+    <string name="dica_chamada">A Macro não espera a chamada terminar: a próxima Ação roda logo em seguida.</string>
+    <string name="aviso_sem_conta">A Conta de e-mail ainda não foi configurada (Configurações). Sem ela, esta Ação falha.</string>
+
+    <!-- Restrições -->
+    <string name="restricao_faixa">Faixa de horário</string>
+    <string name="restricao_dias">Dias da semana</string>
+    <string name="restricao_limite">Limite de frequência</string>
+    <string name="inicio_hora">Início: %1$s</string>
+    <string name="fim_hora">Fim: %1$s</string>
+    <string name="dica_meia_noite">A faixa passa da meia-noite.</string>
+    <string name="erro_faixa_igual">Início e fim não podem ser iguais.</string>
+    <string name="dias_permitidos">Dias permitidos</string>
+    <string name="dica_dias">O dia é avaliado no momento do disparo.</string>
+    <string name="minutos">Minutos</string>
+    <string name="dica_limite">Barra novos disparos desta Macro até completar o intervalo desde a última execução.</string>
+
+    <!-- Resumos -->
+    <string name="resumo_todos_apps">todos os apps</string>
+    <string name="resumo_notificacao">Notificação de %1$s</string>
+    <string name="resumo_faixa">Das %1$s às %2$s</string>
+    <string name="resumo_faixa_meia_noite">(passa da meia-noite)</string>
+    <string name="resumo_limite">No máximo 1 execução a cada %1$d min</string>
+
+    <!-- Problemas de validação -->
+    <string name="problema_sem_gatilho">Adicione um Gatilho.</string>
+    <string name="problema_sem_acao">Adicione uma Ação.</string>
+    <string name="problema_sem_apps">Escolha ao menos um aplicativo.</string>
+    <string name="problema_filtro_sem_termos">Um Filtro precisa de ao menos um termo.</string>
+    <string name="problema_sem_destinatario">A Ação %1$d não tem destinatário.</string>
+    <string name="problema_destinatario_invalido">A Ação %1$d tem um destinatário inválido: %2$s</string>
+    <string name="problema_numero_sem_ddd">A Ação %1$d tem um número sem DDD para o WhatsApp: %2$s</string>
+    <string name="problema_mensagem_vazia">A Ação %1$d está sem mensagem.</string>
+    <string name="problema_restricao_invalida">A Restrição %1$d é inválida.</string>
+
+    <!-- Permissões -->
+    <string name="permissao_sms">SMS</string>
+    <string name="permissao_telefone">Telefone</string>
+    <string name="permissao_acessibilidade">Serviço de acessibilidade</string>
+
+    <!-- Registros -->
+    <string name="sem_registros">Nenhum registro ainda.</string>
+    <string name="limpar_registros">Limpar registros</string>
+    <string name="limpar_registros_titulo">Apagar todos os registros?</string>
+    <string name="selo_executada">Executada</string>
+    <string name="selo_barrada">Barrada</string>
+    <string name="selo_bloqueada">Bloqueada</string>
+    <string name="selo_teste">Teste</string>
+    <string name="resumo_resultados">OK: %1$d · pendentes: %2$d · falhas: %3$d</string>
+    <string name="desfecho_executada">Executada</string>
+    <string name="desfecho_barrada">Barrada pela Restrição %1$s</string>
+    <string name="desfecho_bloqueada">Bloqueada: permissão ausente (%1$s)</string>
+    <string name="resultado_ok">Concluído</string>
+    <string name="resultado_pendente">Pendente</string>
+    <string name="resultado_teto">Bloqueado pelo Teto global</string>
+    <string name="resultado_erro">Falhou: %1$s</string>
+    <string name="notificacao_origem">Notificação</string>
+    <string name="origem_app">App: %1$s (%2$s)</string>
+    <string name="origem_titulo">Título: %1$s</string>
+    <string name="origem_texto">Texto: %1$s</string>
+    <string name="resultados">Resultados</string>
+
+    <!-- Saúde do app -->
+    <string name="saude_titulo">Saúde do app</string>
+    <string name="saude_acesso_notificacoes">Acesso a notificações</string>
+    <string name="saude_acesso_notificacoes_desc">Necessário para o Gatilho Notificação recebida.</string>
+    <string name="saude_listener">Leitor de notificações conectado</string>
+    <string name="saude_listener_desc">Se estiver desconectado, o sistema encerrou o leitor. Tente reconectar.</string>
+    <string name="saude_permissao">Permissão: %1$s</string>
+    <string name="saude_permissao_desc">Macros que dependem dela ficam bloqueadas sem ela.</string>
+    <string name="saude_post_notificacoes">Notificações do D-Macro</string>
+    <string name="saude_post_notificacoes_desc">Para avisar quando o Teto global for atingido.</string>
+    <string name="saude_bateria">Sem otimização de bateria</string>
+    <string name="saude_bateria_desc">Evita que o sistema encerre o D-Macro em segundo plano.</string>
+    <string name="saude_samsung">Aparelho Samsung</string>
+    <string name="saude_samsung_desc">Coloque o D-Macro em “Apps que nunca entram em suspensão”.</string>
+    <string name="guia_samsung">1. Abra Configurações › Bateria.\n2. Toque em Limites de uso em segundo plano.\n3. Toque em Apps que nunca entram em suspensão.\n4. Toque em + e escolha D-Macro.\n\nTambém em Configurações › Apps › D-Macro › Bateria, escolha “Sem restrições”.</string>
+    <string name="saude_conta_email">Conta de e-mail</string>
+    <string name="saude_acessibilidade">Serviço de acessibilidade</string>
+    <string name="saude_acessibilidade_desc">Necessário para as Ações de WhatsApp. Ative “D-Macro: enviar WhatsApp”.</string>
+    <string name="saude_whatsapp_instalado">%1$s instalado</string>
+    <string name="saude_whatsapp_instalado_desc">Usado por alguma Ação de WhatsApp.</string>
+    <string name="saude_restritas">Configurações restritas</string>
+    <string name="saude_restritas_desc">Se o Android não deixar ativar o acesso a notificações ou o serviço de acessibilidade, é preciso liberar as configurações restritas.</string>
+    <string name="guia_restritas">Em APKs instalados fora de uma loja, o Android bloqueia esses interruptores até você liberar:\n\n1. Toque em Abrir configurações (Informações do app D-Macro).\n2. Toque em ⋮ no canto superior direito.\n3. Toque em Permitir configurações restritas e confirme.\n4. Volte e ative o acesso a notificações e o serviço de acessibilidade.\n\nSe o menu ⋮ não tiver essa opção, tente ativar uma vez o interruptor bloqueado e volte a esta tela.</string>
+    <string name="saude_conta_email_desc">Necessária para as Ações de e-mail.</string>
+    <string name="saude_android15">Notificações aprimoradas</string>
+
+    <!-- Configurações -->
+    <string name="conta_email">Conta de e-mail</string>
+    <string name="conta_email_desc">Os e-mails das Macros saem desta conta, via SMTP. A senha fica criptografada no aparelho.</string>
+    <string name="servidor_smtp">Servidor SMTP</string>
+    <string name="porta">Porta</string>
+    <string name="usuario_email">Seu e-mail (usuário)</string>
+    <string name="senha_app">Senha de app</string>
+    <string name="senha_salva">Senha (deixe vazio para manter a salva)</string>
+    <string name="dica_gmail">No Gmail, use uma “senha de app” (Conta Google › Segurança › Senhas de app), não a sua senha normal.</string>
+    <string name="enviar_teste">Enviar e-mail de teste</string>
+    <string name="conta_salva">Conta salva.</string>
+    <string name="conta_removida">Conta removida.</string>
+    <string name="enviando_teste">Enviando e-mail de teste…</string>
+    <string name="email_teste_assunto">D-Macro: e-mail de teste</string>
+    <string name="email_teste_corpo">Se você recebeu esta mensagem, a Conta de e-mail do D-Macro está funcionando.</string>
+    <string name="teste_ok">E-mail de teste enviado para %1$s.</string>
+    <string name="teste_falha_autenticacao">Usuário ou senha recusados pelo servidor.</string>
+    <string name="teste_falha">Falha no envio: %1$s</string>
+    <string name="servico_opcao">Serviço em primeiro plano</string>
+    <string name="servico_opcao_desc">Mantém uma notificação permanente para o sistema não encerrar o D-Macro. Use se as Macros pararem de disparar.</string>
+
+    <!-- Notificações do próprio app -->
+    <string name="canal_avisos">Avisos de segurança</string>
+    <string name="canal_servico">Serviço ativo</string>
+    <string name="aviso_teto_titulo">Teto global atingido</string>
+    <string name="aviso_teto_texto">O D-Macro bloqueou envios: o limite de %1$d %2$s por hora foi atingido.</string>
+    <string name="teto_sms">SMS</string>
+    <string name="teto_chamadas">chamadas</string>
+    <string name="teto_whatsapp">mensagens de WhatsApp</string>
+    <string name="servico_titulo">D-Macro ativo</string>
+    <string name="servico_texto">Monitorando notificações para as suas Macros.</string>
+
+    <plurals name="resumo_n_apps">
+        <item quantity="one">%1$d app</item>
+        <item quantity="other">%1$d apps</item>
+    </plurals>
+    <plurals name="estimativa_partes">
+        <item quantity="one">Exemplo: %2$d caracteres em %1$d SMS</item>
+        <item quantity="other">Exemplo: %2$d caracteres em %1$d partes de SMS</item>
+    </plurals>
+    <plurals name="teste_sms">
+        <item quantity="one">Enviar SMS para %1$d pessoa</item>
+        <item quantity="other">Enviar SMS para %1$d pessoas</item>
+    </plurals>
+    <plurals name="teste_email">
+        <item quantity="one">Enviar e-mail para %1$d pessoa</item>
+        <item quantity="other">Enviar e-mail para %1$d pessoas</item>
+    </plurals>
+    <plurals name="teste_whatsapp">
+        <item quantity="one">Enviar WhatsApp para %1$d pessoa (o WhatsApp vai abrir e o D-Macro vai tocar em Enviar)</item>
+        <item quantity="other">Enviar WhatsApp para %1$d pessoas (o WhatsApp vai abrir e o D-Macro vai tocar em Enviar)</item>
+    </plurals>
+</resources>

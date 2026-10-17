@@ -1,0 +1,274 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "ba9d843be2b0d1784f36453bb5f3765c",
+    "entities": [
+      {
+        "tableName": "macros",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `nome` TEXT NOT NULL, `ativada` INTEGER NOT NULL, `json` TEXT NOT NULL, `criadaEm` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nome",
+            "columnName": "nome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ativada",
+            "columnName": "ativada",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "json",
+            "columnName": "json",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "criadaEm",
+            "columnName": "criadaEm",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "execucoes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `macroId` TEXT NOT NULL, `macroNome` TEXT NOT NULL, `instante` INTEGER NOT NULL, `teste` INTEGER NOT NULL, `origemPacote` TEXT, `origemApp` TEXT, `origemTitulo` TEXT, `origemTexto` TEXT, `tipoDesfecho` TEXT NOT NULL, `desfechoJson` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "macroId",
+            "columnName": "macroId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "macroNome",
+            "columnName": "macroNome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "instante",
+            "columnName": "instante",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "teste",
+            "columnName": "teste",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "origemPacote",
+            "columnName": "origemPacote",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "origemApp",
+            "columnName": "origemApp",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "origemTitulo",
+            "columnName": "origemTitulo",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "origemTexto",
+            "columnName": "origemTexto",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "tipoDesfecho",
+            "columnName": "tipoDesfecho",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "desfechoJson",
+            "columnName": "desfechoJson",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_execucoes_macroId",
+            "unique": false,
+            "columnNames": [
+              "macroId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_execucoes_macroId` ON `${TABLE_NAME}` (`macroId`)"
+          },
+          {
+            "name": "index_execucoes_instante",
+            "unique": false,
+            "columnNames": [
+              "instante"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_execucoes_instante` ON `${TABLE_NAME}` (`instante`)"
+          }
+        ]
+      },
+      {
+        "tableName": "execucao_acoes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `execucaoId` TEXT NOT NULL, `posicao` INTEGER NOT NULL, `indiceAcao` INTEGER NOT NULL, `tipo` TEXT NOT NULL, `destinatario` TEXT NOT NULL, `rotulo` TEXT, `resultadoJson` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`execucaoId`) REFERENCES `execucoes`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "execucaoId",
+            "columnName": "execucaoId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "posicao",
+            "columnName": "posicao",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "indiceAcao",
+            "columnName": "indiceAcao",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destinatario",
+            "columnName": "destinatario",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rotulo",
+            "columnName": "rotulo",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "resultadoJson",
+            "columnName": "resultadoJson",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_execucao_acoes_execucaoId",
+            "unique": false,
+            "columnNames": [
+              "execucaoId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_execucao_acoes_execucaoId` ON `${TABLE_NAME}` (`execucaoId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "execucoes",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "execucaoId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "usos_teto",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `tipo` TEXT NOT NULL, `instante` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "instante",
+            "columnName": "instante",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_usos_teto_tipo_instante",
+            "unique": false,
+            "columnNames": [
+              "tipo",
+              "instante"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_usos_teto_tipo_instante` ON `${TABLE_NAME}` (`tipo`, `instante`)"
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ba9d843be2b0d1784f36453bb5f3765c')"
+    ]
+  }
+}

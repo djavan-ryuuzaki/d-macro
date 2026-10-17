@@ -1,0 +1,12 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.kotlin/
+captures/
+
+# Chave de assinatura do release (nunca versionar)
+*.jks
+*.keystore
+keystore.properties
