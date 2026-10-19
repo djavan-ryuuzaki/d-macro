@@ -171,7 +171,17 @@ O workflow [`.github/workflows/release.yml`](.github/workflows/release.yml) roda
    keytool -genkeypair -v -keystore dmacro-release.jks -alias dmacro -keyalg RSA -keysize 4096 -validity 10000
    ```
 
-2. No GitHub, em Settings › Secrets and variables › Actions, crie os segredos `DMACRO_KEYSTORE_BASE64` (saída de `base64 -w0 dmacro-release.jks`), `DMACRO_STORE_PASSWORD`, `DMACRO_KEY_ALIAS` e `DMACRO_KEY_PASSWORD`.
+2. No GitHub, em Settings › Secrets and variables › Actions › **New repository secret**, crie os segredos `DMACRO_KEYSTORE_BASE64`, `DMACRO_STORE_PASSWORD`, `DMACRO_KEY_ALIAS` e `DMACRO_KEY_PASSWORD`. Para gerar o valor de `DMACRO_KEYSTORE_BASE64` (já copiado para a área de transferência):
+
+   ```powershell
+   # Windows (PowerShell)
+   [Convert]::ToBase64String([IO.File]::ReadAllBytes("dmacro-release.jks")) | Set-Clipboard
+   ```
+
+   ```bash
+   # Linux / macOS / Git Bash
+   base64 -w0 dmacro-release.jks
+   ```
 
 **Cada release**
 
